@@ -1,0 +1,26 @@
+{
+  "name": "courserer",
+  "version": "1.0.0",
+  "description": "Scrape Course Detail",
+  "main": "index.js",
+  "scripts": {
+    "dev:fd": "npm run build && node dist/faradars",
+    "start:fd": "node dist/faradars",
+    "build": "tsc --build --verbose"
+  },
+  "author": "A.A.K.",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node16": "^16.1.0",
+    "@types/node": "^20.4.10",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "eslint": "^8.47.0"
+  },
+  "dependencies": {
+    "@types/async": "^3.2.20",
+    "async": "^3.2.4",
+    "axios": "^1.4.0",
+    "csv-writer": "^1.6.0"
+  }
+}
