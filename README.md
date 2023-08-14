@@ -1,7 +1,9 @@
 ### Scraping Online Course Shops
 
 ##### To-Do
-- [] faradars.org
+- [x] faradars.org
+	- Scrape
+	- Analysis
 - [] linom.org
 - [] udemy.com
-- [] udacity.com
+- [] udacity.comz
