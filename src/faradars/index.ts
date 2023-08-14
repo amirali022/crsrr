@@ -15,7 +15,7 @@ const modeHelper = () => {
 };
 
 const op = parseInt( process.argv[ 2]);
-const list = process.argv[ 3];
+let list = process.argv[ 3];
 
 if( !op) {
 	console.error( "Please Specify The Operation Code!");
@@ -35,7 +35,9 @@ if( op === 2) {
 		process.exit( 1);
 	}
 
-	if( !statSync( `data/faradars/courseList/${ list}`, { throwIfNoEntry: false})) {
+	list = `data/faradars/courseList/${ list}`;
+
+	if( !statSync( list, { throwIfNoEntry: false})) {
 		console.error( "List file does not exist!");
 		process.exit( 1);
 	}
