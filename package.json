@@ -6,6 +6,8 @@
   "scripts": {
     "dev:fd": "npm run build && node dist/faradars",
     "start:fd": "node dist/faradars",
+    "dev:lm": "npm run build && node dist/linom",
+    "start:lm": "node dist/linom",
     "build": "tsc --build --verbose"
   },
   "author": "A.A.K.",

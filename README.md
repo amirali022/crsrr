@@ -4,6 +4,8 @@
 - [x] faradars.org
 	- Scrape
 	- Analysis
-- [] linom.org
+- [x] linom.org
+	- Scrape
+	- Analysis
 - [] udemy.com
-- [] udacity.comz
+- [] udacity.com
