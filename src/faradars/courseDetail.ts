@@ -1,8 +1,7 @@
-import { createReadStream} from "fs";
-import CsvReadableStream from "csv-reader";
 import { createObjectCsvWriter} from "csv-writer";
 import axios from "axios";
 import { eachSeries} from "async";
+import { getSlugs} from "../utils/faradars";
 
 const csvWriter = createObjectCsvWriter( {
 	path: `data/faradars/detailedList/list-${ Date.now()}.csv`,
@@ -47,33 +46,6 @@ const getDetail = async ( slug: string) => {
 	};
 
 	await csvWriter.writeRecords( [ row]);
-};
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const getSlugs = ( list: string) => {
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	const slugs: any[] = [];
-
-	return new Promise( ( resolve, reject) => {
-		const inputStream = createReadStream( list, "utf8");
-		inputStream
-			.pipe( new CsvReadableStream( {
-				parseNumbers: true,
-				parseBooleans: true,
-				trim: true,
-				asObject: true
-			}))
-			// eslint-disable-next-line @typescript-eslint/no-explicit-any
-			.on( "data", ( row: any) => {
-				slugs.push( row.slug);
-			})
-			.on( "end", () => {
-				resolve( slugs);
-			})
-			.on( "error", err => {
-				reject( err);
-			});
-	});
 };
 
 const courseDetail = async ( list: string) => {

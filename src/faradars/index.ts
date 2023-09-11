@@ -1,11 +1,13 @@
 import { statSync} from "fs";
 import listCourses from "./listCourses";
 import courseDetail from "./courseDetail";
+import instructor from "./instructor";
 import modeHelper from "../utils/modeHelper";
 
 const ops = {
 	1: "Get list of courses and save them in a CSV file",
-	2: "Get detail of courses and save them in a CSV file"
+	2: "Get detail of courses and save them in a CSV file",
+	3: "Get datail of instructors and save them in a CSV file"
 };
 
 const op = parseInt( process.argv[ 2]);
@@ -23,7 +25,7 @@ if( Object.keys( ops).indexOf( op.toString()) === -1) {
 	process.exit( 1);
 }
 
-if( op === 2) {
+if( op > 1) {
 	if( !list) {
 		console.error( "List name is required!");
 		process.exit( 1);
@@ -42,8 +44,11 @@ if( op === 2) {
 	case 1:
 		await listCourses( 100);
 		break;
-	default:
+	case 2:
 		await courseDetail( list);
+		break;
+	default:
+		await instructor( list);
 		break;
 	}
 })();
