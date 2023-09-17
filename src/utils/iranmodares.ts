@@ -13,8 +13,7 @@ const getIds = ( list: string) => {
 				parseNumbers: true,
 				parseBooleans: true,
 				trim: true,
-				asObject: true,
-				skipLines: 8674
+				asObject: true
 			}))
 			// eslint-disable-next-line @typescript-eslint/no-explicit-any
 			.on( "data", ( row: any) => {

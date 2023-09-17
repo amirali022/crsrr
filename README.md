@@ -8,5 +8,5 @@
 - [x] linom.org
 	- Scrape
 	- Analysis
-- [] teaching.iranmodares.com
+- [x] teaching.iranmodares.com
 - [x] tamland.ir
