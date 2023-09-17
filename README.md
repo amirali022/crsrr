@@ -9,3 +9,4 @@
 	- Scrape
 	- Analysis
 - [] teaching.iranmodares.com
+- [x] tamland.ir

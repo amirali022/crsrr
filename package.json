@@ -4,6 +4,8 @@
   "description": "Scrape Course and Tutor Detail",
   "main": "index.js",
   "scripts": {
+    "dev:tl": "npm run build && node dist/tamland",
+    "start:tl": "node dist/tamland",
     "dev:im": "npm run build && node dist/iranmodares",
     "start:im": "node dist/iranmodares",
     "dev:fd": "npm run build && node dist/faradars",
