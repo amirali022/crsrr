@@ -1,9 +1,11 @@
 {
   "name": "courserer",
   "version": "1.0.0",
-  "description": "Scrape Course Detail",
+  "description": "Scrape Course and Tutor Detail",
   "main": "index.js",
   "scripts": {
+    "dev:im": "npm run build && node dist/iranmodares",
+    "start:im": "node dist/iranmodares",
     "dev:fd": "npm run build && node dist/faradars",
     "start:fd": "node dist/faradars",
     "dev:lm": "npm run build && node dist/linom",
@@ -23,7 +25,9 @@
     "@types/async": "^3.2.20",
     "async": "^3.2.4",
     "axios": "^1.4.0",
+    "cheerio": "^1.0.0-rc.12",
     "csv-reader": "^1.0.12",
-    "csv-writer": "^1.6.0"
+    "csv-writer": "^1.6.0",
+    "form-data": "^4.0.0"
   }
 }

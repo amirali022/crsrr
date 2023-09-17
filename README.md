@@ -8,6 +8,4 @@
 - [x] linom.org
 	- Scrape
 	- Analysis
-- [] maktabkhooneh.org
-- [] udemy.com
-- [] udacity.com
+- [] teaching.iranmodares.com
