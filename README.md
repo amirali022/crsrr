@@ -9,4 +9,8 @@
 	- Scrape
 	- Analysis
 - [x] teaching.iranmodares.com
+	- Instructors
 - [x] tamland.ir
+	- Instructors
+- [x] tikkaa.ir
+	- Teachers
