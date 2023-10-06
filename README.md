@@ -14,3 +14,7 @@
 	- Instructors
 - [x] tikkaa.ir
 	- Teachers
+- [x] ostadsalam.ir
+	- Teachers
+- [ ] aghaejazeh.org
+	- Tutors
