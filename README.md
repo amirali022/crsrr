@@ -16,5 +16,5 @@
 	- Teachers
 - [x] ostadsalam.ir
 	- Teachers
-- [ ] aghaejazeh.org
+- [x] aghaejazeh.org
 	- Tutors
