@@ -1,7 +1,7 @@
 import { createObjectCsvWriter} from "csv-writer";
 import axios from "axios";
 import { eachSeries} from "async";
-import { getSlugs} from "../utils/faradars";
+import { getKeys} from "../utils/getKeys";
 
 const csvWriter = createObjectCsvWriter( {
 	path: `data/faradars/detailedList/list-${ Date.now()}.csv`,
@@ -50,7 +50,7 @@ const getDetail = async ( slug: string) => {
 
 const courseDetail = async ( list: string) => {
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	const slugs = await getSlugs( list) as any;
+	const slugs = await getKeys( list, "slug") as any;
 
 	eachSeries( slugs, getDetail, err => {
 		if( err) console.error( err);

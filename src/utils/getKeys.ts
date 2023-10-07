@@ -2,9 +2,9 @@ import { createReadStream} from "fs";
 import CsvReadableStream from "csv-reader";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const getSlugs = ( list: string) => {
+const getKeys = ( list: string, key: string) => {
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	const slugs: any[] = [];
+	const keys: any[] = [];
 
 	return new Promise( ( resolve, reject) => {
 		const inputStream = createReadStream( list, "utf8");
@@ -17,10 +17,10 @@ const getSlugs = ( list: string) => {
 			}))
 			// eslint-disable-next-line @typescript-eslint/no-explicit-any
 			.on( "data", ( row: any) => {
-				slugs.push( row.slug);
+				keys.push( row[ key]);
 			})
 			.on( "end", () => {
-				resolve( slugs);
+				resolve( keys);
 			})
 			.on( "error", err => {
 				reject( err);
@@ -29,5 +29,5 @@ const getSlugs = ( list: string) => {
 };
 
 export {
-	getSlugs
+	getKeys
 };

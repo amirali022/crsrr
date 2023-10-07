@@ -3,7 +3,7 @@ import axios from "axios";
 import { eachSeries} from "async";
 import { load} from "cheerio";
 import FormData from "form-data";
-import { getUrls} from "../utils/ostadsalam";
+import { getKeys} from "../utils/getKeys";
 import clean from "../utils/clean";
 
 const csvWriter = createObjectCsvWriter( {
@@ -86,7 +86,7 @@ const getDetail = async ( url: string) => {
 
 const teacherDetail = async ( list: string) => {
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
-	const urls = await getUrls( list) as any;
+	const urls = await getKeys( list, "link") as any;
 
 	console.log( `Total Number of IDs: ${ urls.length}`);
 
