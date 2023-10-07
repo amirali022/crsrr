@@ -1,7 +1,7 @@
 import { createObjectCsvWriter} from "csv-writer";
 import axios from "axios";
 import { eachSeries} from "async";
-import { getKeys} from "../utils/getKeys";
+import getKeys from "../utils/getKeys";
 
 const csvWriter = createObjectCsvWriter( {
 	path: `data/faradars/detailedList/list-${ Date.now()}.csv`,

@@ -3,7 +3,7 @@ import axios from "axios";
 import { eachSeries} from "async";
 import { load} from "cheerio";
 import FormData from "form-data";
-import { getKeys} from "../utils/getKeys";
+import getKeys from "../utils/getKeys";
 import clean from "../utils/clean";
 
 const csvWriter = createObjectCsvWriter( {

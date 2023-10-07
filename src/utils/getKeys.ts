@@ -28,6 +28,4 @@ const getKeys = ( list: string, key: string) => {
 	});
 };
 
-export {
-	getKeys
-};
+export default getKeys;
