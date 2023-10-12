@@ -4,6 +4,7 @@
   "description": "Scrape Course and Tutor Detail",
   "main": "index.js",
   "scripts": {
+    "start:io": "npm run build && node dist/iranostad",
     "start:ls": "npm run build && node dist/lastsecond",
     "start:ae": "npm run build && node dist/aghaejazeh",
     "start:os": "npm run build && node dist/ostadsalam",
