@@ -1,6 +1,7 @@
-### Scraping Online Course Shops
+## Thirst for Data
 
-##### To-Do
+### Courses and Tutors
+
 - [x] faradars.org
 	- Scrape
 	- Analysis

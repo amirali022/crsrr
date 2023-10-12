@@ -1,5 +1,5 @@
 {
-  "name": "courserer",
+  "name": "scrapers",
   "version": "1.0.0",
   "description": "Scrape Course and Tutor Detail",
   "main": "index.js",
