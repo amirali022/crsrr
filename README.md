@@ -19,3 +19,7 @@
 	- Teachers
 - [x] aghaejazeh.org
 	- Tutors
+
+### Restaurant
+
+- [x] lastsecond.ir
